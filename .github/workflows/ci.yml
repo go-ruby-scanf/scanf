@@ -31,7 +31,7 @@ jobs:
       - if: runner.os != 'Windows'
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "4.0.6"
+          ruby-version: "4.0.7"
       # scanf left the default gems after Ruby 3.x; install it so the oracle has a
       # reference to diff against (it still self-gates on RUBY_VERSION >= 4.0).
       - if: runner.os != 'Windows'
